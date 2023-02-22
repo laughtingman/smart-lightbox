@@ -2,13 +2,16 @@
   "name": "smart-lightbox",
   "description": "Lightweight lightbox for photo galleries without dependencies",
 	"main": [
-    "./dist/smart-lightbox.min.css",
-    "./dist/smart-lightbox.min.js",
-		"./dist/smart-lightbox.min.css.map",
-		"./dist/smart-lightbox.min.js.map"
+    "dist/smart-lightbox.min.css",
+    "dist/smart-lightbox.min.js",
+		"dist/smart-lightbox.min.css.map",
+		"dist/smart-lightbox.min.js.map"
   ],
+	"moduleType": [
+		"globals"
+	],
   "authors": [
-    "Talleyran"
+    "Talleyran <me@talleyran.ru> (http://talleyran.ru)"
   ],
   "license": "MIT",
   "keywords": [
@@ -24,5 +27,10 @@
     "**/.*",
     "node_modules"
 	],
-  "homepage": "https://laughtingman.github.io/smart-lightbox"
+  "homepage": "https://laughtingman.github.io/smart-lightbox",
+	"repository": {
+		"type": "git",
+  	"url": "git://github.com/laughtingman/smart-lightbox.git"
+	},
+	"private": false
 }
