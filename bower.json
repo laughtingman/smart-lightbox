@@ -1,16 +1,28 @@
 {
   "name": "smart-lightbox",
   "description": "Lightweight lightbox for photo galleries without dependencies",
-  "main": "dist/smart-lightbox.min.js",
+	"main": [
+    "./dist/smart-lightbox.min.css",
+    "./dist/smart-lightbox.min.js",
+		"./dist/smart-lightbox.min.css.map",
+		"./dist/smart-lightbox.min.js.map"
+  ],
   "authors": [
     "Talleyran"
   ],
   "license": "MIT",
   "keywords": [
     "lightbox",
+		"smart-lightbox",
     "gallery",
     "photos",
-    "preview"
+    "preview",
+		"slideshow",
+		"images"
   ],
+	"ignore": [
+    "**/.*",
+    "node_modules"
+	],
   "homepage": "https://laughtingman.github.io/smart-lightbox"
 }
