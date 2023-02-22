@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Smart LightBox</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container my-3">
+	
+	<h1>Smart lightbox</h1>
+	
+	<p>Lightweight lightbox for photo galleries without dependencies.</p>
+
+	<p>Customizable and can be confugured with any DOM structure.</p>
+
+	<p>Support hotkeys, mouse wheel and touch events.</p>
+
+	<h2>Examples</h2>	
+
+	<ul>
+		<li><a href="./examples/example1.html">Basic example</a></li>
+		<li><a href="./examples/example2.html">Big image url in data attribute</a></li>
+		<li><a href="./examples/example3.html">Big image url in link href</a></li>
+		<li><a href="./examples/example4.html">Custom style</a></li>
+	</ul>
+
+	<h2>Options</h2>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Option</th>
+				<th>Type</th>
+				<th>Default</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>containerSelector</td>
+				<td>string</td>
+				<td>article</td>
+				<td>css selector of the container that contains all the images</td>
+			</tr>
+			<tr>
+				<td>imageSelector</td>
+				<td>string</td>
+				<td>img</td>
+				<td>the css selector of images inside the container</td>
+			</tr>
+			<tr>
+				<td>lineSelector</td>
+				<td>string</td>
+				<td>p</td>
+				<td>the css selector of one line</td>
+			</tr>
+			<tr>
+				<td>galery</td>
+				<td>bolean</td>
+				<td>true</td>
+				<td>if true lineSelector becomes flexbox, all images line up, become the same width, and crop to the same height</td>
+			</tr>
+			<tr>
+				<td>bigImageAttr</td>
+				<td>string</td>
+				<td>src</td>
+				<td>attribute contains big image url, by default is te same as preview image. If you set it as "href" it try to be find on parent link node.</td>
+			</tr>
+			<tr>
+				<td>borderRadius</td>
+				<td>string</td>
+				<td>0</td>
+				<td>border radius of images on the page and in the lightbox</td>
+			</tr>
+			<tr>
+				<td>gap</td>
+				<td>string</td>
+				<td>0</td>
+				<td>margin between images in photoset</td>
+			</tr>
+			<tr>
+				<td>blur</td>
+				<td>string</td>
+				<td>0</td>
+				<td>amount of backdrop blur filter</td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "smart-lightbox",
+  "description": "Lightweight lightbox for photo galleries without dependencies",
+  "main": "dist/smart-lightbox.min.js",
+  "authors": [
+    "Talleyran"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "lightbox",
+    "gallery",
+    "photos",
+    "preview"
+  ],
+  "homepage": "https://laughtingman.github.io/smart-lightbox"
+}

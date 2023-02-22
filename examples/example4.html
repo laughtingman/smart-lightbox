@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LightBox example</title>
+	<script src="../dist/smart-lightbox.min.js"></script>
+	<link rel="stylesheet" href="../dist/smart-lightbox.min.css">
+	<style>
+		article {
+			max-width: 800px;
+			margin: 0 auto;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	
+	<article>
+		<h1>Gaps, border-radius, white background, blur</h1>
+		<h2>Simple use</h2>
+		<p>
+			<img src="https://picsum.photos/800/500/?image=1060" alt="" />
+			<img src="https://picsum.photos/800/400/?image=1040" alt="" />
+			<img src="https://picsum.photos/800/600/?image=1026" alt="" />
+		</p>
+	</article>
+	<article>
+		<h2>Grouping successively</h2>
+		<p>
+			<img src="https://picsum.photos/1200/500/?image=985" alt="" />
+			<img src="https://picsum.photos/1200/400/?image=877" alt="" />
+		</p>
+		<p>
+			<img src="https://picsum.photos/800/500/?image=1004" alt="" />
+			<img src="https://picsum.photos/800/400/?image=1011" alt="" />
+			<img src="https://picsum.photos/1200/600/?image=867" alt="" />
+		</p>
+	</article>
+	<article>
+		<h2>Break group when text break</h2>
+		<p>
+			<img src="https://picsum.photos/800/500/?image=961" alt="" />
+			<img src="https://picsum.photos/800/400/?image=960" alt="" />
+		</p>
+		<p>Some text</p>
+		<p>
+			<img src="https://picsum.photos/800/500/?image=957" alt="" />
+			<img src="https://picsum.photos/800/400/?image=933" alt="" />
+		</p>
+	</article>
+	<article>
+		<h2>Panorama mode</h2>
+		<p>Horizontal</p>
+		<p>
+			<img src="https://picsum.photos/2000/800/?image=864" alt="" />
+		</p>
+		<p>Vertical</p>
+		<p>
+			<img src="https://picsum.photos/400/2000/?image=834" alt="" />
+		</p>
+	</article>
+	<article>
+		<h2>Little single image</h2>
+		<p>
+			<img src="https://picsum.photos/400/200/?image=814" alt="" />
+		</p>
+	</article>
+	<script>
+			smartLightbox({
+				gap: "10px",
+				borderRadius: "5px",
+				background: "rgba(255,255,255,0.7)",
+				blur: "20px"
+			});
+	</script>	
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LightBox example</title>
+	<script src="../dist/smart-lightbox.min.js"></script>
+	<link rel="stylesheet" href="../dist/smart-lightbox.min.css">
+	<style>
+		article {
+			max-width: 800px;
+			margin: 0 auto;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<article>
+		<h2>Big image url in data-src attribute</h2>
+		<p>
+			<img src="https://picsum.photos/600/300/?image=1060" data-src="https://picsum.photos/800/500/?image=1060" alt="" />
+			<img src="https://picsum.photos/600/200/?image=1040" data-src="https://picsum.photos/800/400/?image=1040" alt="" />
+			<img src="https://picsum.photos/600/400/?image=1026" data-src="https://picsum.photos/800/600/?image=1026" alt="" />
+		</p>
+	</article>
+	<script>
+			smartLightbox({
+				bigImageAttr: "data-src",
+			});
+	</script>	
+</body>
+</html>
